@@ -1,0 +1,8 @@
+[package]
+name = "guess-the-name"
+version = "0.1.0"
+edition = "2021"
+authors = ["Pavel Guzhavin <pvl.guzh@outlook.com>"]
+
+[dependencies]
+rand = "0.8.5"
