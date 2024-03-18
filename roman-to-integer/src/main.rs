@@ -8,14 +8,14 @@ fn main() {
 
 /// converting Roman numbers to integer
 pub fn roman_to_int(input: &str) -> i32 {
-    let values = HashMap::from([
-        ('I', 1), ('V', 5),
-        ('X', 10), ('L', 50),
-        ('C', 100), ('D', 500),
-        ('M', 1000),
-    ]);
+	let values = HashMap::from([
+		('I', 1), ('V', 5),
+		('X', 10), ('L', 50),
+		('C', 100), ('D', 500),
+		('M', 1000),
+	]);
 
-    let mut result = 0;
+	let mut result = 0;
 	let input_length = input.len();
 
 	for i in 0..input_length {
@@ -31,5 +31,5 @@ pub fn roman_to_int(input: &str) -> i32 {
 
 		result = if current < next { result - current } else { result + current };
 	}
-    return result;
+	return result;
 }
