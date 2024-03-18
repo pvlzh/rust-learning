@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 fn main() {
-    let input_value = "MMXXIV";
+	let input_value = "MMXXIV";
 	let result = roman_to_int(input_value);
 	println!("{result}"); // 2024
 }
@@ -19,7 +19,7 @@ pub fn roman_to_int(input: &str) -> i32 {
 	let input_length = input.len();
 
 	for i in 0..input_length {
-		
+
 		let ch = input.chars().nth(i).unwrap();
 		let current = values[&ch];
 
